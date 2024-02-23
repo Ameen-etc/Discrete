@@ -69,51 +69,51 @@ Find the sum of the following APs:
 \input{tables/parameters}
 From \eqref{eq:abc}, we get the sum to $n$ terms,
 \begin{align}
-    y(n)=\frac{(n+1)}{2}\cbrak{2x(0)+nd}u(n)
+    y(n)=\frac{\brak{n+1}}{2}\cbrak{2x\brak{0}+nd}u\brak{n}
 \end{align}
 Now taking the Z-transform we have,
 \begin{align}
-    Y(z)=\frac{x(0)}{(1-z^{-1})^2}+\frac{dz^{-1}}{(1-z^{-1})^3}
+    Y(z)=\frac{x\brak{0}}{\brak{1-z^{-1}}^2}+\frac{dz^{-1}}{\brak{1-z^{-1}}^3}
 \end{align}
 \begin{enumerate}[label=(\alph*)]
     \item \begin{align}
-        &x(0)=2 \\
+        &x\brak{0}=2 \\
         &d=5 \\
-        \implies &y(9)=245
+        \implies &y\brak{9}=245
     \end{align}
     \begin{figure}[h!]
         \centering
-        \includegraphics[width=0.9\columnwidth]{figs/plt1.png}
+        \includegraphics[width=\columnwidth]{figs/plt1.png}
         \caption{$1st$ AP}
     \end{figure}
     \item \begin{align}
-        &x(0)=-37 \\
+        &x\brak{0}=-37 \\
         &d=4 \\
-        \implies &y(11)=-180
+        \implies &y\brak{11}=-180
     \end{align}
     \begin{figure}[h!]
         \centering
-        \includegraphics[width=0.9\columnwidth]{figs/plt2.png}
+        \includegraphics[width=\columnwidth]{figs/plt2.png}
         \caption{$2nd$ AP}
     \end{figure}
     \item \begin{align}
-        &x(0)=0.6 \\
+        &x\brak{0}=0.6 \\
         &d=1.1 \\
-        \implies &y(99)=5505
+        \implies &y\brak{99}=5505
     \end{align}
     \begin{figure}[h!]
         \centering
-        \includegraphics[width=0.9\columnwidth]{figs/plt3.png}
+        \includegraphics[width=\columnwidth]{figs/plt3.png}
         \caption{$3rd$ AP}
     \end{figure}
     \item \begin{align}
-        &x(0)=\frac{1}{15} \\
+        &x\brak{0}=\frac{1}{15} \\
         &d=\frac{1}{60} \\
-        \implies &y(10)=1.65
+        \implies &y\brak{10}=1.65
     \end{align}
     \begin{figure}[h!]
         \centering
-        \includegraphics[width=0.9\columnwidth]{figs/plt4.png}
+        \includegraphics[width=\columnwidth]{figs/plt4.png}
         \caption{$4th$ AP}
     \end{figure}
 \end{enumerate}

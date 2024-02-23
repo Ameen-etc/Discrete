@@ -5,8 +5,8 @@ from scipy.signal import convolve
 # Define the parameters of the AP
 
 # Load data from the .dat files
-data_ap = np.loadtxt('dat_files/AP/ap4_data.dat', skiprows=1)  # Skip the header row
-data_sum = np.loadtxt('dat_files/SUM/ap4_sum.dat', skiprows=1)
+data_ap = np.loadtxt('dat_files/AP/ap1_data.dat', skiprows=1)  # Skip the header row
+data_sum = np.loadtxt('dat_files/SUM/ap1_sum.dat', skiprows=1)
 
 # Separate the columns into n_values and y_values for AP data
 n_values_ap = data_ap[:, 0]
@@ -45,9 +45,8 @@ fig, axs = plt.subplots(2, 1, figsize=(8, 8))
 
 # Plot AP data
 axs[0].stem(n_values_ap, y_values_ap, linefmt='c-', markerfmt='co', basefmt='r-')
-axs[0].set_title('Arithmetic Progression')
-axs[0].set_xlabel('n_value')
-axs[0].set_ylabel('y_value')
+axs[0].set_xlabel('n')
+axs[0].set_ylabel('x(n)')
 
 # Plot sum data
 axs[1].scatter(np.arange(0, int(T)), simulated_sum[0:int(T)], marker='x', color='red', label='Simulation')
