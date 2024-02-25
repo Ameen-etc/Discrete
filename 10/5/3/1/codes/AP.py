@@ -5,8 +5,8 @@ from scipy.signal import convolve
 # Define the parameters of the AP
 
 # Load data from the .dat files
-data_ap = np.loadtxt('dat_files/AP/ap1_data.dat', skiprows=1)  # Skip the header row
-data_sum = np.loadtxt('dat_files/SUM/ap1_sum.dat', skiprows=1)
+data_ap = np.loadtxt('dat_files/AP/ap4_data.dat', skiprows=1)  # Skip the header row
+data_sum = np.loadtxt('dat_files/SUM/ap4_sum.dat', skiprows=1)
 
 # Separate the columns into n_values and y_values for AP data
 n_values_ap = data_ap[:, 0]
@@ -56,6 +56,7 @@ axs[1].set_xlabel('n')
 axs[1].set_ylabel('y(n)')
 
 plt.tight_layout()
+plt.legend()
 plt.grid(True)
 plt.show()
 
