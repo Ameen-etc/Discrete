@@ -68,8 +68,6 @@ General term of the $n^{th}$($n$ starts from $0$) term of the $1^{st}$ G.P.,
 Now the sequence in the z domain would be,
 \begin{align}
     X_1\brak{z}&=\sum\limits_{n=-\infty}^{\infty}x_1\brak{n}z^{-n} \\
-    &=\sum\limits_{n=-\infty}^{\infty}ar^nu\brak{n}z^{-n} \\
-    &=a\brak{1+rz^{-1}+r^2z^{-2}+r^3z^{-3}+\ldots} \\
     &=\frac{a}{1-rz^{-1}},\hspace{0.5cm}|z|>r
 \end{align}
 General for the $2^{nd}$ G.P. is given as,
@@ -78,7 +76,7 @@ General for the $2^{nd}$ G.P. is given as,
 \end{align}
 And the z-Transform,
 \begin{align}
-    X_1\brak{z}&=\sum\limits_{n=-\infty}^{\infty}AR^nu\brak{n}z^{-n} \\
+    X_2\brak{z}&=\sum\limits_{n=-\infty}^{\infty}AR^nu\brak{n}z^{-n} \\
     &=\frac{A}{1-Rz^{-1}},\hspace{0.5cm}|z|>R
 \end{align}
 Now taking the product will result in a sequence as,
@@ -88,16 +86,12 @@ Now taking the product will result in a sequence as,
 \end{align}
 z-Transform of the resulting sequence,
 \begin{align}
-    X_1\brak{z}&=\sum\limits_{n=-\infty}^{\infty}aA\brak{rR}^nu\brak{n}z^{-n} \\
+    Y\brak{z}&=\sum\limits_{n=-\infty}^{\infty}aA\brak{rR}^nu\brak{n}z^{-n} \\
     &=\frac{aA}{1-rRz^{-1}},\hspace{0.5cm}|z|>rR
 \end{align}
-So the $\brak{n-1}^{th}$ term would be,
+So, form \ref{eq:11.9.3.20.1}, taking the ratio of two consecutive terms,
 \begin{align}
-    y\brak{n-1}=aA\brak{rR}^{n-1}u\brak{n-1} \label{eq:11.9.3.20.2}
-\end{align}
-So, form \ref{eq:11.9.3.20.1} and \ref{eq:11.9.3.20.2},
-\begin{align}
-    \frac{y\brak{n}}{y\brak{n-1}}&=\frac{aA\brak{rR}^nu\brak{n}}{aA\brak{rR}^{n-1}u\brak{n}} \\
+    \frac{y\brak{n}}{y\brak{n-1}}&=\frac{aA\brak{rR}^nu\brak{n}}{aA\brak{rR}^{n-1}u\brak{n-1}} \\
     &=rR
 \end{align}
 As we can see the ratio of any two consecutive terms, $rR$, is a constant. Which means the product of the corresponding terms of the two G.P.s results in another G.P.
